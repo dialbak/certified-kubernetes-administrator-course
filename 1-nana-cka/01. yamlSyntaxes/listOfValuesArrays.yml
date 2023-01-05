@@ -1,0 +1,13 @@
+# Arrays
+microservices3:
+  - user-authentication
+  - shopping-cart
+
+# Json format example
+key: >
+  {
+    "microservices3": [
+      "user-authentication",
+      "shopping-cart"
+    ]
+  }

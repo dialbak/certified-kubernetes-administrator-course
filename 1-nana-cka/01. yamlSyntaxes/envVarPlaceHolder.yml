@@ -1,0 +1,9 @@
+# readiness probe => use $ sign
+command:
+  - /bin/sh
+  - -ec
+  - >-
+    mysql -h 127.0.0.1 -u root -p$MYSQLI_ROOT_PASSWORD -e 'SELECT 1'
+
+
+name: {{.Value.service.name}}

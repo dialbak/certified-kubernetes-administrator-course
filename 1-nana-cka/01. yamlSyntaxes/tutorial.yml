@@ -1,0 +1,53 @@
+#apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      volumeMounts:
+        - mountPath: /usr/local/nginx
+          name: myVolume
+      ports:
+        - containerPort: 80
+    - name: sideCar
+      image: some-image
+
+key: >
+  {
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "nginx",
+    "labels": {
+      "app": "nginx"
+    }
+  },
+  "spec": {
+    "containers": [
+      {
+        "name": "nginx-container",
+        "image": "nginx",
+        "volumeMounts": [
+          {
+            "mountPath": "/usr/local/nginx",
+            "name": "myVolume"
+          }
+        ],
+        "ports": [
+          {
+            "containerPort": 80
+          }
+        ]
+      },
+      {
+        "name": "sideCar",
+        "image": "some-image"
+      }
+    ]
+  }
+}
+

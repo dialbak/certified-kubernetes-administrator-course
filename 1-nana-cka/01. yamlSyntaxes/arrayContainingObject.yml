@@ -1,0 +1,32 @@
+# Array containing objects
+microservices3:
+  - app: user-authentication
+    port: 8080
+    version: 1.7
+    deployed: off
+  - app: shopping-cart
+    port: 8080
+    version: 1.7
+    deployed: off
+
+# Json format example
+microservices4: >
+  {
+    "microservices3": [
+      {
+        "app": "user-authentication",
+        "port": 8080,
+        "version": 1.7,
+        "deployed": "off"
+      },
+      {
+        "app": "shopping-cart",
+        "port": 8080,
+        "version": 1.7,
+        "deployed": "off"
+      }
+    ]
+  }
+
+
+

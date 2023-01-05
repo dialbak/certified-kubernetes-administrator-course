@@ -1,0 +1,31 @@
+microservices:
+  - app: user-authentication
+    port: 9000
+    version: 1.7
+  - app: shopping-cart
+    port: 9002
+    versions:
+      - 1.7
+      - 1.8
+      - 1.9
+
+# Json format example
+key: >
+  {
+    "microservices": [
+      {
+        "app": "user-authentication",
+        "port": 9000,
+        "version": 1.7
+      },
+      {
+        "app": "shopping-cart",
+        "port": 9002,
+        "versions": [
+          1.7,
+          1.8,
+          1.9
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,10 @@
+data:
+  mosquitto: |
+    log_
+    log_
+    log_
+    log_
+    log_
+
+# | -> "log_\nlog_\nlog_\nlog_\nlog_\n"
+# > -> "mosquitto": "log_ log_ log_ log_ log_\n"

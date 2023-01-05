@@ -1,0 +1,12 @@
+# Key value pair
+app: user-authentication
+port: 8080
+version: 1.7
+
+# Json format example
+key: >
+  {
+    "app": "user-authentication",
+    "port": 8080,
+    "version": 1.7
+  }
