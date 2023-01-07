@@ -6,6 +6,7 @@
 
 ##### ssh into ec2 instance with its public ip
     ssh -i ~/.ssh/k8s-node.pem ubuntu@35.180.130.108
+    master-node ssh -i ~/.ssh/k8s-node.pem ubuntu@18.218.249.255
 
 
 ### Configure Infrastructure
@@ -14,7 +15,7 @@
 ##### set host names of nodes
     sudo vim /etc/hosts
 
-##### get priavate ips of each node and add this to each server 
+##### get private ips of each node and add this to each server 
     45.14.48.178 master
     45.14.48.179 worker1
     45.14.48.180 worker2
