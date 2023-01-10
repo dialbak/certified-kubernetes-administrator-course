@@ -1,0 +1,18 @@
+{
+  "Person": {
+    "data": {
+      "patronym": {
+        "name": "bak",
+        "lastname": "diall"
+      },
+      "hobbies": [
+        "dev",
+        "patronym": [
+          "name":"bak",
+          "lastname": "diall"
+        ]
+      }
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+# Arrays
+microservices3:
+  - user-authentication
+  - shopping-cart
+
+Fruits:
+  - Orange
+  - Apple
+  - Banana
+
+Vegetables:
+  - Carrot
+  - Cauliflower
+  - Tomato
+
+
+# Json format example
+key: >
+  {
+    "microservices3": [
+      "user-authentication",
+      "shopping-cart"
+    ]
+  }
