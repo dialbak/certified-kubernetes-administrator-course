@@ -557,6 +557,8 @@ Solutions to the deployments practice test
    ```
    </details>
 
+
+# Imperative commands 
 Certification Tip!
 
 Here's a tip!
